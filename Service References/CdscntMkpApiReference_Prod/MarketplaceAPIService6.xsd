@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Cdiscount.Service.Marketplace.API.External.Contract.Data.Product" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Cdiscount.Service.Marketplace.API.External.Contract.Data.Product" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd0" namespace="http://www.cdiscount.com" />
+  <xs:import schemaLocation="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="BrandListMessage">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://www.cdiscount.com" base="q1:ServiceBaseAPIMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BrandList" nillable="true" type="q1:ArrayOfBrand" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BrandListMessage" nillable="true" type="tns:BrandListMessage" />
+  <xs:complexType name="FulfilmentProductRequest">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BarCodeList" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element xmlns:q3="http://www.cdiscount.com" minOccurs="0" name="FulfilmentReferencement" type="q3:FbcReferencementFilter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FulfilmentProductRequest" nillable="true" type="tns:FulfilmentProductRequest" />
+  <xs:complexType name="ProductStockListMessage">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://www.cdiscount.com" base="q4:ServiceBaseAPIMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProductStockList" nillable="true" type="tns:ArrayOfProductStock" />
+          <xs:element minOccurs="0" name="Status" type="q4:FulfilmentProductListStatus" />
+          <xs:element minOccurs="0" name="TotalProductCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProductStockListMessage" nillable="true" type="tns:ProductStockListMessage" />
+  <xs:complexType name="ArrayOfProductStock">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductStock" nillable="true" type="tns:ProductStock" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductStock" nillable="true" type="tns:ArrayOfProductStock" />
+  <xs:complexType name="ProductStock">
+    <xs:sequence>
+      <xs:element name="BlockedStock" type="xs:int" />
+      <xs:element name="Ean" nillable="true" type="xs:string" />
+      <xs:element name="FodStock" nillable="true" type="xs:int" />
+      <xs:element name="FrontStock" type="xs:int" />
+      <xs:element name="IsReferenced" type="xs:boolean" />
+      <xs:element name="Libelle" nillable="true" type="xs:string" />
+      <xs:element name="SellerReference" nillable="true" type="xs:string" />
+      <xs:element name="Sku" nillable="true" type="xs:string" />
+      <xs:element name="StockInWarehouse" type="xs:int" />
+      <xs:element name="Warehouse" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductStock" nillable="true" type="tns:ProductStock" />
+</xs:schema>

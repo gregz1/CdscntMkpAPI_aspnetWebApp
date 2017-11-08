@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16e3ef31-0255-4647-b6ac-34bb7897fb2a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MarketplaceAPIService.xsd" MetadataType="Schema" ID="19b6d719-2af2-4143-825a-5ff06028639e" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MarketplaceAPIService1.xsd" MetadataType="Schema" ID="4dc02302-ed01-440d-8097-6f2cf629f6ff" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MarketplaceAPIService2.xsd" MetadataType="Schema" ID="b0524af2-151e-4ab8-b3ec-f823dbc2af55" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MarketplaceAPIService.wsdl" MetadataType="Wsdl" ID="6d3c538f-2a2a-451c-b06d-42887d19359f" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="MarketplaceAPIService3.xsd" MetadataType="Schema" ID="37e3b105-e8ad-4094-b0fd-67cf7c726810" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd6" />
+    <MetadataFile FileName="MarketplaceAPIService4.xsd" MetadataType="Schema" ID="13b25626-b4e5-448d-8b59-78aa372dfde2" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd7" />
+    <MetadataFile FileName="MarketplaceAPIService5.xsd" MetadataType="Schema" ID="de67a26e-0c83-4764-a03f-d5dfce282a60" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd4" />
+    <MetadataFile FileName="MarketplaceAPIService6.xsd" MetadataType="Schema" ID="ab720206-f3f0-4348-b1a3-6f2b831a0414" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd5" />
+    <MetadataFile FileName="MarketplaceAPIService7.xsd" MetadataType="Schema" ID="705c68f0-9b18-4127-b71d-953aae921574" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd8" />
+    <MetadataFile FileName="MarketplaceAPIService8.xsd" MetadataType="Schema" ID="9f88b64b-a8c4-4582-b140-b79fc906e64d" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd9" />
+    <MetadataFile FileName="MarketplaceAPIService9.xsd" MetadataType="Schema" ID="292dcc4c-6125-4109-aba6-2869fd88c8e4" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd10" />
+    <MetadataFile FileName="MarketplaceAPIService1.wsdl" MetadataType="Wsdl" ID="7cba06ab-a192-43a0-ba8f-c84f9c1e4c18" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?wsdl" />
+    <MetadataFile FileName="MarketplaceAPIService10.xsd" MetadataType="Schema" ID="1763bfbd-8f12-4da9-b84e-dd21635344b7" SourceId="1" SourceUrl="https://wsvc.cdiscount.com/MarketplaceAPIService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
